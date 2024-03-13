@@ -4,7 +4,7 @@ title: Kalkulus 1
 permalink: /kalkulus-1/
 ---
 
-Halaman ini dikhususkan sebagai tempat menyimpan segala *resource* tutoring Kalkulus 1 di Semester Genap 2023/2024 ini. Akan berisi daftar playlist video beserta problem set beserta pembahasannya. Semoga dapat membantu mendapatkan nilai yang baik!
+Halaman ini dikhususkan sebagai tempat menyimpan segala *resource* tutor Kalkulus 1 di Semester Genap 2023/2024 ini. Akan berisi daftar playlist video beserta problem set beserta pembahasannya. Semoga dapat membantu mendapatkan nilai yang baik!
 
 Untuk memudahkan navigasi, teman-teman bisa pakai *table of content* di bawah ini buat langsung ke bab yang ingin dipelajari:
 
