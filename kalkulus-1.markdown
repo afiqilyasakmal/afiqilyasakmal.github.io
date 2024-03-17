@@ -54,4 +54,22 @@ Untuk memudahkan navigasi, teman-teman bisa pakai *table of content* di bawah in
 - [2.11 Latihan kekontinuan fungsi 2](https://drive.google.com/file/d/1XRtDWn8AoQfzLfHPIBftmoRB473C_tBk/view?usp=drive_link)
 - [2.12 Limit takhingga dan contoh soal](https://drive.google.com/file/d/1iSyd-Tnhk_1T5kQBNeVYo5Y0uUIZ6YHt/view?usp=drive_link)
 
+## Bab 3: Turunan
+
+**Video**
+- 3.1 Garis singgung dan definisi turunan
+- 3.2 Beberapa notasi turunan dan "d" sebagai operator turunan
+- 3.3 Latihan mencari turunan menggunakan definisi turunan
+- 3.4 Aturan turunan dan contoh pemakaiannya
+- 3.5 Aturan rantai
+- 3.6 Latihan aturan rantai
+- 3.7 Keterdiferensialan mengimplikasikan kontinuitas dan contohnya
+- 3.8 Turunan fungsi transenden: beberapa bentuk penting
+- 3.9 Latihan turunan fungsi transenden
+- 3.10 Turunan tingkat tinggi
+- 3.11 Turunan implisit
+- 3.12 Latihan turunan implisit
+- 3.13 Turunan fungsi parametrik
+- 3.14 Latihan turunan parametrik
+
 Akan diperbaharui secara berkala.
