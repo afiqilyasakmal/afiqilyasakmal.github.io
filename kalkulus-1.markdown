@@ -54,22 +54,15 @@ Untuk memudahkan navigasi, teman-teman bisa pakai *table of content* di bawah in
 - [2.11 Latihan kekontinuan fungsi 2](https://drive.google.com/file/d/1XRtDWn8AoQfzLfHPIBftmoRB473C_tBk/view?usp=drive_link)
 - [2.12 Limit takhingga dan contoh soal](https://drive.google.com/file/d/1iSyd-Tnhk_1T5kQBNeVYo5Y0uUIZ6YHt/view?usp=drive_link)
 
-## Bab 3: Turunan
-
-**Video**
-- 3.1 Garis singgung dan definisi turunan
-- 3.2 Beberapa notasi turunan dan "d" sebagai operator turunan
-- 3.3 Latihan mencari turunan menggunakan definisi turunan
-- 3.4 Aturan turunan dan contoh pemakaiannya
-- 3.5 Aturan rantai
-- 3.6 Latihan aturan rantai
-- 3.7 Keterdiferensialan mengimplikasikan kontinuitas dan contohnya
-- 3.8 Turunan fungsi transenden: beberapa bentuk penting
-- 3.9 Latihan turunan fungsi transenden
-- 3.10 Turunan tingkat tinggi
-- 3.11 Turunan implisit
-- 3.12 Latihan turunan implisit
-- 3.13 Turunan fungsi parametrik
-- 3.14 Latihan turunan parametrik
-
-Akan diperbaharui secara berkala.
+## Pembahasan Soal UTS Calculus 1 KKI (Odd Semester 2023)
+- [01a - Pertidaksamaan mutlak](https://drive.google.com/file/d/1EnAIl_iMwstwoehOmjMuYdewZuOzGXyc/view?usp=sharing)
+- [01b - Domain dan range; Fungsi ganjil dan genap](https://drive.google.com/file/d/1lfFXWtpGmMFfw7CeSmD6cL5Fg2VeDPFf/view?usp=drive_link)
+- [02 - Limit trigonometri dan limit takhingga](https://drive.google.com/file/d/1NKKZ_UlpJRls2xQDTqJYviKANJ-dVC4H/view?usp=drive_link)
+- [03 - Kekontinuan fungsi](https://drive.google.com/file/d/1mqy1dMclcY_ehqThsSSmXs9SAdgKesZo/view?usp=drive_link)
+- [04a - Turunan trigonometri dan penggunaan aturan turunan](https://drive.google.com/file/d/1kXMKpDcMKxv3KLINjSLKCIFDRZyKIaH9/view?usp=drive_link)
+- [04b - Turunan fungsi transenden](https://drive.google.com/file/d/1SKx9_PBNki5Lx_OWZfnC6cw3tgj3TGe-/view?usp=drive_link)
+- [04c - Turunan fungsi trigonometri yang melibatkan logaritma natural](https://drive.google.com/file/d/13tIxUcChphJUi-ak1ABYRVFXdPNSf5nn/view?usp=drive_link)
+- [05a - Turunan kedua fungsi parametrik](https://drive.google.com/file/d/1DLGnDHkDeUJ-wMtj0meQNBVGgsDKNUrN/view?usp=drive_link)
+- [05b - Persamaan Garis Tangen dari Fungsi Parametrik](https://drive.google.com/file/d/1alAfnx7FUBbWakjV5fE4588MzOe3Bbc_/view?usp=drive_link)
+- [06a - Interval naik/turun dan titik stasioner suatu fungsi](https://drive.google.com/file/d/1HK5hralver8GfVespfUT43Gfz1Io7d5U/view?usp=drive_link)
+- [06b dan 06c - Mencari kecekungan dan titik ekstrim lokal/global suatu fungsi](https://drive.google.com/file/d/1FTX0dyb4EqPFigxyDQI8o3rb2ZuUkA-2/view?usp=drive_link)
