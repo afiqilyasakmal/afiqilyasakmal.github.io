@@ -66,3 +66,11 @@ Untuk memudahkan navigasi, teman-teman bisa pakai *table of content* di bawah in
 - [05b - Persamaan Garis Tangen dari Fungsi Parametrik](https://drive.google.com/file/d/1alAfnx7FUBbWakjV5fE4588MzOe3Bbc_/view?usp=drive_link)
 - [06a - Interval naik/turun dan titik stasioner suatu fungsi](https://drive.google.com/file/d/1HK5hralver8GfVespfUT43Gfz1Io7d5U/view?usp=drive_link)
 - [06b dan 06c - Mencari kecekungan dan titik ekstrim lokal/global suatu fungsi](https://drive.google.com/file/d/1FTX0dyb4EqPFigxyDQI8o3rb2ZuUkA-2/view?usp=drive_link)
+
+## Bab 4: Integral Tak Tentu
+**Video**
+- [4.1 Definisi anti turunan](https://drive.google.com/file/d/1R_aDPhHRe_FIxAs1l2Ao1vBo71tUAJ9e/view?usp=drive_link)
+- [4.2 Aturan dalam mencari integral tak tentu](https://drive.google.com/file/d/1ko2JuJoN6YMkQWTF-NGQZOK3Gdr3lQT7/view?usp=drive_link)
+- [4.3 Contoh soal integral tak tentu](https://drive.google.com/file/d/1Isyp-CvG0RhHVOcSvzeW6Q5jJ4lPhpWp/view?usp=drive_link)
+- [4.4 Latihan soal 1](https://drive.google.com/file/d/1oJk-B_Z5gr0iEg8XH1X0xQLoAgDolIQV/view?usp=drive_link)
+- [4.5 Latihan soal 2](https://drive.google.com/file/d/1XpPnnjZF-Qo8CvpZlIOq5WXVahHgd-Px/view?usp=drive_link)

@@ -4,6 +4,8 @@ title:  "Analisis Performa Exchange-traded Fund dan Reksa Dana di Kawasan Eropa"
 date:   2024-01-05 21:16:02 +0700
 ---
 
+**Note: Versi slide presentasi (yang jauh lebih singkat) dapat dilihat di link ini.**
+
 Proyek ini merupakan proyek *data science* yang bertujuan menganalisis performa tiap *exchange-traded fund* (ETF) dan reksa dana yang beroperasi di kawasan Eropa. Apa saja yang akan kita lakukan?
 
 - Melakukan eksplorasi dan melihat *insight* dari dataset yang berukuran besar ini (lebih dari 20.000 baris!)
@@ -124,15 +126,43 @@ Secara konvensional, ada dua paradigma metode pembelajaran mesin: *supervised le
 
 ### Klasifikasi *rating*
 
-TODO
+Pertama, kita akan melalukan klasifikasi terhadap fitur `rating`. **Rating** merepresentasikan performa reksadana dengan range nilai 1-5 yang diberikan oleh [Morningstar](https://sg.morningstar.com/sg/news/120375/the-morningstar-rating-for-funds.aspx). Kita akan menerapkan beberapa model, seperti *decision tree*, *K-nearest neighbor*, *random forest*, dan *XGBoost*. Sebelum kita melakukan klasifikasi, data perlu diolah sedemikian rupa sehingga data siap dimasukkan ke dalam model. Tahap ini kita sebut sebagai *data preparation*.
+
+Notebook untuk proses *data preparation* dan pembuatan model untuk mengklasifikasikan *rating* selengkapnya bisa dilihat di [***link*** **ini**](https://github.com/afiqilyasakmal/european-investment-management/blob/main/notebook/03_klasifikasi.ipynb){:target="_blank"}.
 
 #### *Data preparation*
 
-TODO
+Sebelum data dimasukkan dan di-*fit* ke dalam model, kita perlu mengolahnya agar data tersebut siap pakai. Berikut adalah hal-hal yang dilakukan:
+1. **Menangani data duplikat**. Pada dataset, tidak ditemukan duplikat.
+2. **Missing value**. Terdapat beberapa fitur yang memiliki banyak *missing value*. Pada konteks ini, kita akan drop fitur dengan missing value lebih dari 50%. 
+3. **Melakukan imputasi data**. Fitur dengan tipe data kategorikal akan diimputasi dengan nilai modus, sedangkan fitur dengan tipe data numerik akan diimputasi dengan nilai mean.
+4. **Melakukan encoding**. Sebelum dimasukkan ke dalam model, fitur dengan tipe kategorikal perlu dikonveri menjadi numerik terlebih dahulu. Kali ini, kita akan melakukan encoding menggunakan metode *label encoding*.
+5. ***Splitting data***. Data dibagi jadi dua untuk training dan testing, dengan proporsi data training : data testing adalah 80 : 20.
+6. **Melakukan normalisasi**. Fitur-fitur yang ada dinormalisasi agar range nilainya tidak terlalu lebar sehingga tidak menutupi efek fitur yang lain.
+7. **Yeo-Johnson *transform***. Data ditransformasi untuk mengurangi banyaknya outlier pada data.
+8. **Feature selection**. *Feature selection* dilakukan menggunakan `SelectKBest` yang memanfaatkan uji statistik ANOVA dan memilih 50 fitur paling penting atau relevan.
+9. **Imbalance handling**. Di sini, kita melakukan oversampling agar data minoritas dapat direpresentasikan secara lebih baik. Metode yang digunakan adalah Borderline-SMOTE.
 
-#### Decision Tree, Random Forest, XGBoost
+Sampai di sini, data kita sudah siap untuk dimasukkan ke dalam model *machine learning*.  
 
-TODO
+#### Pembuatan model: Decision Tree, K-Nearest Neighbor, Random Forest, XGBoost
+
+1. **Decision Tree**
+<br>
+Decision Tree dibuat menggunakan semua fitur. Tree yang dibuat dapat memprediksi target dengan semua metrik: akurasi, f1 score, precision, dan recall, semuanya berada di rentang 70-71%. Berdasarkan hasil ini, kita dapat menyimpulkan bahwa model decison tree memiliki performa yang cukup baik. Dengan akurasi 70% dengan tingkat recall dan precision yang mirip, dapat diasumsikan model ini dapat memprediksi kelas (rating) dengan konsisten. Artinya, tidak terlalu banyak target yang mengalami salah prediksi.
+2. **K-Nearest Neighbor**
+<br>
+Mirip dengan Decision Tree, model K-Nearest Neighbor memiliki hasil yang mirip. Akurasi, f1 score, precision, dan recall berada di rentang 70-74%. Model memiliki kinerja yang konsisten antara presisi, recall, dan F1 score untuk setiap kelas (ditunjukkan oleh perbedaan yang kecil antara nilai macro dan micro). Kemudian, model cenderung memiliki kinerja yang lebih baik dalam hal recall daripada presisi, karena nilai recall macro lebih tinggi daripada nilai presisi macro.
+3. **Random Forest** 
+<br>
+Berdasarkan hasil yang diperoleh, dapat disimpulkan:
+- Model memiliki kinerja yang konsisten antara presisi, recall, dan skor F1 untuk setiap kelas (ditunjukkan oleh perbedaan yang kecil antara nilai makro dan mikro). 
+- Model cenderung memiliki kinerja yang seimbang antara presisi dan recall, karena nilai-nilai presisi dan recall berada pada jarak yang dekat. 
+- Akurasi, skor F1, presisi, dan recall model Random Forest cukup baik, menunjukkan kemampuan model untuk melakukan klasifikasi dengan baik secara keseluruhan.
+
+4. **XGBoost**
+<br>
+Hasil evaluasi yang didapatkan model XGBoost sangat mirip dengan *random forest*, namun dengan hasil evaluasi yang sedikit lebih tinggi dibandingkan random forest. Artinya, karakteristik model ini mirip dengan *random forest* namun dengan 
 
 ### Prediksi nilai *long term projected earnings growth* 
 
@@ -140,7 +170,7 @@ Karena permasalahan memprediksi nilai *long term projected earnings growth* meru
 
 Notebook untuk proses *data preparation* dan pembuatan model untuk prediksi nilai *long term projected earnings growth* selengkapnya bisa dilihat di [***link*** **ini**](https://github.com/afiqilyasakmal/european-investment-management/blob/main/notebook/04_regresi.ipynb){:target="_blank"}.
 
-#### *Data preprocessing*
+#### *Data preparation*
 
 Terdapat dua pendekatan untuk bagian ini. **Pendekatan pertama** yaitu dengan melakukan studi literatur untuk menentukan fitur mana saja yang paling baik dapat memprediksi variabel target. Hal-hal yang dilakukan adalah:
 
@@ -160,7 +190,7 @@ Sementara itu, pada **pendekatan kedua**, *data preprocessing* yang dilakukan ad
 6. **Melakukan standarisasi dan feature selection menggunakan random forest**. Fitur yang diambil adalah top 15 fitur terbaik berdasarkan random forest. Dataset direduksi agar sesuai dengan fitur yang terpilih.
 7. **Menerapkan *principal component analysis* (PCA)**. 
 
-#### Linear Regression, Ridge Regression, Lasso Regression, Random Forest
+#### Pembuatan model: Linear Regression, Ridge Regression, Lasso Regression, Random Forest
 
 Pada **pendekatan pertama**, setelah data di-*preprocess*, dataset dibagi jadi training set dan testing set dengan proporsi 20:80. Berikut adalah ringkasan hasil *fit* ke model-model yang digunakan:
 
