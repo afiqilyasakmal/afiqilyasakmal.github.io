@@ -283,8 +283,10 @@ Secara garis besar, dapat dilihat bahwa model **random forest** memiliki kehanda
 
 ### Clustering: Analisis jenis-jenis manajer investasi
 
-TODO
+Dalam melakukan clustering, hal pertama yang perlu diperhatikan adalah mempelajari *domain knowledge* dataset, di mana setelah studi literatur, saya memutuskan untuk melakukan clustering berdasarkan 3 fitur: `roi`, `roic`, dan `roa`. *Data preprocessing* yang dilakukan mencakup:
+- Mengeliminasi fitur yang tidak diperlukan
+- Melakukan imputasi data (yang bertipe numerikal). Imputasi dilakukan dengan menggunakan nilai mean atau median, tergantung indeks *skewness*-nya. Jika terlalu skew, data diimputasi dengan nilai median, sedangkan jika tidak maka menggunakan nilai mean. 
+- Melakukan standarisasi, untuk memperkecil nilai range fitur.
 
-## Kesimpulan
-
-TODO
+#### Temuan
+-
