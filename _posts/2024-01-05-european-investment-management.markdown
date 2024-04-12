@@ -4,7 +4,7 @@ title:  "Analisis Performa Exchange-traded Fund dan Reksa Dana di Kawasan Eropa"
 date:   2024-01-05 21:16:02 +0700
 ---
 
-**Note: Versi slide presentasi (yang jauh lebih singkat) dapat dilihat di link ini.**
+**Note: Versi slide presentasi (yang jauh lebih singkat) dapat dilihat di [link ini](https://docs.google.com/presentation/d/1KbglR9Ao7QH9EfVj8tUIIjPY1o98uUBAHQxUk7XPA_c/edit?usp=sharing).**
 
 Proyek ini merupakan proyek *data science* yang bertujuan menganalisis performa tiap *exchange-traded fund* (ETF) dan reksa dana yang beroperasi di kawasan Eropa. Apa saja yang akan kita lakukan?
 
@@ -284,9 +284,36 @@ Secara garis besar, dapat dilihat bahwa model **random forest** memiliki kehanda
 ### Clustering: Analisis jenis-jenis manajer investasi
 
 Dalam melakukan clustering, hal pertama yang perlu diperhatikan adalah mempelajari *domain knowledge* dataset, di mana setelah studi literatur, saya memutuskan untuk melakukan clustering berdasarkan 3 fitur: `roi`, `roic`, dan `roa`. *Data preprocessing* yang dilakukan mencakup:
-- Mengeliminasi fitur yang tidak diperlukan
+- Mengeliminasi fitur yang tidak diperlukan, yaitu fitur selain `roi`, `roic`, dan `roa`.
 - Melakukan imputasi data (yang bertipe numerikal). Imputasi dilakukan dengan menggunakan nilai mean atau median, tergantung indeks *skewness*-nya. Jika terlalu skew, data diimputasi dengan nilai median, sedangkan jika tidak maka menggunakan nilai mean. 
+![Distribusi dataset](/images/12-distribusi-data.png)
+<br>
+Berdasarkan visualisasi (beserta pencarian nilai indeks *skewness*), fitur `roic` dan `roa` diimputasi dengan nilai median, sedangkan `roe` diimputasi dengan nilai mean.
+<br>
 - Melakukan standarisasi, untuk memperkecil nilai range fitur.
+<div style="display: flex;">
+        <img src="/images/10-sebelum-normalisasi.png" alt="Gambar 1" style="width: 50%;">
+        <img src="/images/11-setelah-normalisasi.png" alt="Gambar 2" style="width: 50%;">
+    </div>
+<br>
+Dataset sebelum standarisasi (gambar kiri) vs setelah standarisasi (gambar kanan).
 
 #### Temuan
--
+- **Dengan menggunakan algoritma K-Means, didapatkan cluster terbaik adalah ketika data dibagi menjadi 3 cluster**. Nilai metrik silhoutte score tertinggi, yaitu ketika data dibagi jadi 3 cluster, adalah sekitar 0.42. 
+![Clustering menggunakan K-Means](/images/13-clustering.png)
+<br>
+- Dari hasil clustering menggunakan **K-Means**, dapat disimpulkan bahwa:
+<br>
+![Visualisasi clustering menggunakan K-Means](/images/14-visualisasi-kmeans.png)
+<br>
+1. **Cluster yang berada pada daerah ujung kiri (yang berwarna biru tua) memiliki nilai roa, roic, dan roe yang relatif lebih rendah dibandingkan cluster lainnya**. Dengan begitu, dapat disimpulkan bahwa manager investasi pada klaster tersebut cenderung kurang efektif dan/atau efisien dalam mengelola investasi.
+2. **Cluster yang berada pada daerah tengah (yang berwarna biru) memiliki nilai roa, roic, dan roe menengah. Dengan begitu, dapat disimpulkan bahwa manager investasi pada klaster tersebut memiliki performa rata-rata**. Juga terdapat kemungkinan pada beberapa metrik sangat baik, namun cenderung buruk di metrik lainnya.
+3. **Cluster yang berada di daerah ujung kanan atas, memiliki performa terbaik** dalam hal roa, roic, dan roe. Dengan begitu, dapat disimpulkan bahwa manager investasi pada klaster tersebut memiliki performa yang paling baik dan/atau menjanjikan, di mana ia mengelola dana investasi secara efektif dan/atau efisien.
+4. Cluster dengan nilai roa, roic, dan roe paling tinggi (cluster 1) ada sejumlah **5607 investment management**, diikuti cluster 2 dengan **6275 investment management**, kemudian cluster dengan nilai roa, roic, dan roe terendah sebanyak **9442 investment management**.
+- Dari hasil clustering menggunakan metode **hierarchical clustering**, berikut adalah dendogram yang didapatkan:
+![Visualisasi clustering menggunakan hierarchical (dendogram)](/images/15-dendogram.png)
+
+Kemudian, kita dapat melihat bagaimana nilai roa, roic, dan roe tiap cluster tersebar.
+![Visualisasi clustering menggunakan hierarchical (PCA)](/images/17-kde-plot.png)
+<br>
+Nampak bahwa cluster dengan nilai roa, roe, dan roic tertinggi merupakan bagian minoritas dari dataset yang ada. Manajer investasi mayoritas pada dataset ini jatuh pada kategori menengah. 
