@@ -19,6 +19,8 @@ Sebelum mendefinisikan arsitektur *neural network*, saya melakukan beberapa *dat
 ### 1. Me-*load* dataset
 Pertama, dataset dikelompokkan menjadi 2 kelas: `melanoma` dan `not_melanoma`. Hal ini direpresentasikan dengan folder "melanoma" dan "not_melanoma". Folder tersebut berisi dataset citra yang sesuai dengan nama folder. Sehingga, pada kasus ini, nama folder menjadi nama kelas yang ingin diklasifikasi. Letakkan folder-folder ini pada level *directory* yang sama dengan Jupyter Notebook. Kemudian, setelah siap, *load* dataset.
 
+Dataset juga di-*split* menjadi data *training* dan data *validation* dengan proporsi 80:20. Data *training* digunakan untuk melatih model, sedangkan data *validation* digunakan untuk memvalidasi apakah model sudah dapat menggeneralisir data dengan baik.
+
 ### 2. Melakukan *data augmentation*, *resizing*, dan *normalization*
 <pre>
 transform = transforms.Compose([
