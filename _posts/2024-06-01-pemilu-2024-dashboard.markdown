@@ -8,8 +8,8 @@ Anda dapat melihat *dashboard* yang telah saya buat di bawah ini. Namun, karena 
 Data mentah diambil dari [**website resmi KPU**](https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/31/3174/317408.json).
 
 <iframe src="https://public.tableau.com/views/Pemilu2024-Dashboard/Dashboard1?:showAppBanner=false&:showVizHome=no&:embed=true&:origin=viz_share_link" width = '740px' height = '740px'></iframe>
-
-Beberapa *insight* yang dapat diambil:
+<br/>
+### Beberapa *insight* yang dapat diambil:
 - Prabowo-Gibran menang dengan persentase suara di atas 50%, artinya elektabilitas pasangan calon (paslon) tersebut sangat tinggi.
 - Total suara sah di Pulau Jawa sangatlah besar. Gabungan antara Provinsi Jawa Barat, Jawa Tengah, Jawa Timur, DKI Jakarta, dan Banten saja mencapai angka 73,4 juta suara. Pasangan calon yang unggul di provinsi-provinsi ini tentu akan memiliki kans yang besar untuk menjadi pemenang.
 - Berdasarkan perolehan suara paslon, Prabowo-Gibran menang mutlak hampir di semua provinsi. Melihat *stacked bar-plot*, nampak bahwa Ganjar-Mahfud menjadi paslon yang elektabilitasnya rendah dibandingkan kedua pasangan calon lainnya.
