@@ -150,4 +150,4 @@ Melihat bahwa **training loss** dan **validation loss** serta **accuracy** dan *
 Pada permasalahan deteksi kanker kulit, kita ingin meminimalkan **false negative** dan **false positive** sebab hal kemunculan kasus tersebut bisa berakibat fatal terhadap pasien yang didiagnosis mengalami kanker kulit. Oleh karena itu, metrik yang digunakan untuk mengukur ini adalah **recall** dan **specificity**. Bila dihitung, berdasarkan **confusion matrix** di atas, didapatkan nilai **recall** sebesar **95%** dan nilai **specificity** sebesar **93%**.
 
 ## Kesimpulan
-Secara keseluruhan, performa model yang sangat baik. Performa yang stabil antara **training** dan **validation** mengindikasikan bahwa model memiliki kemampuan generalisasi yang baik.
+Secara keseluruhan, performa model yang sangat baik. Performa yang stabil antara **training** dan **validation** mengindikasikan bahwa model memiliki kemampuan generalisasi yang baik. Model juga dapat memperoleh nilai **recall** dan **specificity** yang sangat baik sehingga model ini dapat meminimalisir kejadian *false negative* dan *false positive*.
