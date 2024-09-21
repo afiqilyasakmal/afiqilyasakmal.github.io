@@ -2,24 +2,26 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Final year student at Faculty of Computer Science,<a href='https://ui.ac.id'>Universitas Indonesia</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>afiq.ilyasa@ui.ac.id</p>
+    <p>Kos Wisma Galaksi, Jalan H.Asmat, Kukusan</p>
+    <p>Kota Depok, Indonesia</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello! The name's Afiq Ilyasa Akmal. I am a student at the Faculty of Computer Science, Universitas Indonesia and currently residing in Depok, Indonesia to finish my undergraduate study (sometimes i also go back to my house in Bekasi!)
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+In addition to my internship as a product manager, I am currently focusing my interest in machine learning by taking courses such as computer vision, natural language processing, information retrieval, and social media analytics. I am open to the possibility of future internships in this field :)
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+You can see my portfolio [here](#), my resume on [LinkedIn](https://www.linkedin.com/in/afiqilyasaakmal/), and my blogs [here](https://afiqilyasakmal.github.io/blog/). When it comes to writing, I will mix it up, using English or Bahasa Indonesia.
+
+Let's keep in touch! Drop me a message at afiq.ilyasa [at] ui [dot] ac [dot] id. See ya!
