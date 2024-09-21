@@ -24,4 +24,4 @@ In addition to my internship as a product manager, I am currently focusing my in
 
 You can see my portfolio [here](#), my resume on [LinkedIn](https://www.linkedin.com/in/afiqilyasaakmal/), and my blogs [here](https://afiqilyasakmal.github.io/blog/). When it comes to writing, I will mix it up, using English or Bahasa Indonesia.
 
-Let's keep in touch! Drop me a message at afiq.ilyasa [at] ui [dot] ac [dot] id. See ya!
+Probably the best way to get to know me is to check out some of the things I've made, which you can find at my [projects](https://afiqilyasakmal.github.io/projects/) page. See ya!
