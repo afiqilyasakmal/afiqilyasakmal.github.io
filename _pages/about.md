@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Final year student at Faculty of Computer Science,<a href='https://ui.ac.id'>Universitas Indonesia</a>.
+subtitle: Final year student at Faculty of Computer Science, <a href='https://ui.ac.id'>Universitas Indonesia</a>.
 
 profile:
   align: right
