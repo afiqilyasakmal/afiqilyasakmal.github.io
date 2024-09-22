@@ -13,7 +13,7 @@
       "city": "Kota Depok",
       "countryCode": "ID",
       "region": "Jawa Barat"
-    },
+    }
   },
   "education": [
     {
@@ -24,7 +24,7 @@
       "studyType": "Bachelor's degree in Computer Science",
       "startDate": "2021-07-30",
       "endDate": "2025-08-01",
-      "courses": ["Foundations of Programming", "Data Structures and Algorithms", "Platform-based Programming", "Machine Learning", "Natural Language Processing",         "Computer Vision", "Information Retrieval", "Social Media Analytics", "Enterprise Application Programming"]
+      "courses": ["Foundations of Programming", "Data Structures and Algorithms", "Platform-based Programming", "Machine Learning", "Natural Language Processing", "Computer Vision", "Information Retrieval", "Social Media Analytics", "Enterprise Application Programming"]
     }
   ],
   "work": [
@@ -35,23 +35,25 @@
       "startDate": "2023-08-25",
       "endDate": "2023-12-10",
       "summary": "Working on Sipebi (Aplikasi Penyuntingan Bahasa Indonesia) project.",
-      "highlights": ["Developed new features: design's new data structures and 4 grammar-checking algorithms written in Python.",
+      "highlights": [
+        "Developed new features: design's new data structures and 4 grammar-checking algorithms written in Python.",
         "Created unit tests for each grammar-checking algorithm.",
         "Structurize its code to make it scalable and maintainable, using object-oriented principles."
       ]
     },
-     {
+    {
       "name": "Waresix",
       "position": "Product Manager Intern",
       "url": "https://www.waresix.com/",
       "startDate": "2024-09-10",
       "endDate": "2024-12-09",
-      "summary": "Working on Sipebi (Aplikasi Penyuntingan Bahasa Indonesia) project.",
-      "highlights": ["Assisted in product strategy development, market research, and cross-functional team collaboration",
-        "Created an unit test to see if there are any bugs in the feature",
-        "Tested products for quality and functionality before launch"
+      "summary": "Assisted in product strategy development, market research, and cross-functional team collaboration.",
+      "highlights": [
+        "Assisted in product strategy development, market research, and cross-functional team collaboration.",
+        "Created unit tests to check for bugs in features.",
+        "Tested products for quality and functionality before launch."
       ]
-    },
+    }
   ],
   "projects": [
     {
@@ -71,41 +73,28 @@
       "url": "https://www.instagram.com/bemfasilkomui/",
       "startDate": "2023-04-01",
       "endDate": "2024-02-01",
-      "summary": "I lead and directed the Research and Strategic Action department which has 10 members and supervised the execution of Research and Strategic Action department’s work programs.",
+      "summary": "I lead and directed the Research and Strategic Action department which has 10 members and supervised the execution of Research and Strategic Action department’s work programs."
     },
-     {
+    {
       "organization": "PMB Fakultas Ilmu Komputer Universitas Indonesia 2023",
       "location": "Depok, Indonesia",
       "position": "Vice Person in Charge of Support Division",
       "url": "https://pmb.cs.ui.ac.id/",
       "startDate": "2023-08-01",
       "endDate": "2024-11-01",
-      "summary": "PMB Fasilkom UI is a subcommittee within DPM Fasilkom UI, dedicated to familiarizing incoming students with the environment and culture of Fasilkom UI. I was involved in logistics to meet the needs of 400+ new students during the 3 months the committee lasted.",
+      "summary": "PMB Fasilkom UI is a subcommittee within DPM Fasilkom UI, dedicated to familiarizing incoming students with the environment and culture of Fasilkom UI. I was involved in logistics to meet the needs of 400+ new students during the 3 months the committee lasted."
     }
   ],
   "skills": [
     {
       "name": "Software Development",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "JavaScript",
-        "HTML/CSS",
-        "Django",
-        "Spring Boot",
-        "React",
-        "Node.js"
-      ]
+      "keywords": ["JavaScript", "HTML/CSS", "Django", "Spring Boot", "React", "Node.js"]
     },
     {
       "name": "Machine Learning and Data Analytics",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "PyTorch",
-        "TensorFlow",
-        "scikit-learn",
-        "seaborn",
-        "matplotlib",
-      ]
+      "keywords": ["PyTorch", "TensorFlow", "scikit-learn", "seaborn", "matplotlib"]
     }
   ],
   "languages": [
@@ -115,7 +104,7 @@
       "icon": ""
     },
     {
-      "language": "Indonesia",
+      "language": "Indonesian",
       "fluency": "Native",
       "icon": ""
     }
